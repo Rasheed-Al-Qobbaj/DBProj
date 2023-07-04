@@ -39,7 +39,7 @@ public class Controller implements Initializable {
     protected void login() throws IOException {
         if(username.getText().equals("root") && password.getText().equals("1234")){
             FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("menu.fxml"));
-            scene = new Scene(fxmlLoader.load(), 650, 400);
+            scene = new Scene(fxmlLoader.load());
             stage.setTitle("Menu");
             stage.setScene(scene);
             stage.show();
@@ -49,7 +49,7 @@ public class Controller implements Initializable {
     @FXML
     protected void back() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("menu.fxml"));
-        scene = new Scene(fxmlLoader.load(), 650, 400);
+        scene = new Scene(fxmlLoader.load());
         stage.setTitle("Menu");
         stage.setScene(scene);
         stage.show();
@@ -58,7 +58,7 @@ public class Controller implements Initializable {
     @FXML
     protected void view() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("vMenu.fxml"));
-        scene = new Scene(fxmlLoader.load(), 650, 400);
+        scene = new Scene(fxmlLoader.load());
         stage.setTitle("View Menu");
         stage.setScene(scene);
         stage.show();
@@ -66,8 +66,12 @@ public class Controller implements Initializable {
 
 
     @FXML
-    protected void vEmp() {
-
+    protected void vEmp() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("vMenu.fxml"));
+        scene = new Scene(fxmlLoader.load());
+        stage.setTitle("View Menu");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -84,7 +88,7 @@ public class Controller implements Initializable {
     @FXML
     protected void update() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("uMenu.fxml"));
-        scene = new Scene(fxmlLoader.load(), 650, 400);
+        scene = new Scene(fxmlLoader.load());
         stage.setTitle("Update Menu");
         stage.setScene(scene);
         stage.show();
@@ -93,7 +97,7 @@ public class Controller implements Initializable {
     @FXML
     protected void uEmp() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("uEmp.fxml"));
-        scene = new Scene(fxmlLoader.load(), 650, 400);
+        scene = new Scene(fxmlLoader.load());
         stage.setTitle("Update Employee");
         stage.setScene(scene);
         stage.show();
@@ -102,7 +106,7 @@ public class Controller implements Initializable {
     @FXML
     protected void uProd() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("uProd.fxml"));
-        scene = new Scene(fxmlLoader.load(), 650, 400);
+        scene = new Scene(fxmlLoader.load());
         stage.setTitle("Update Product");
         stage.setScene(scene);
         stage.show();
@@ -111,7 +115,7 @@ public class Controller implements Initializable {
     @FXML
     protected void uOrd() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Driver.class.getResource("uOrd.fxml"));
-        scene = new Scene(fxmlLoader.load(), 650, 400);
+        scene = new Scene(fxmlLoader.load());
         stage.setTitle("Update Order");
         stage.setScene(scene);
         stage.show();

@@ -18,7 +18,7 @@ public class Driver extends Application {
         // Set the stage
         controller.setStage(stage);
 
-        Scene scene = new Scene(fxmlLoader.load(), 550, 400);
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
