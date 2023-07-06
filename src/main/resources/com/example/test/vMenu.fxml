@@ -7,12 +7,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.Controller">
    <children>
-      <TableView fx:id="tablev" layoutY="2.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TableView fx:id="table" layoutY="2.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columns>
-            <TableColumn fx:id="sid" prefWidth="75.0" text="ID" />
-            <TableColumn fx:id="cname" prefWidth="175.0" text="Customer Name" />
-            <TableColumn fx:id="ename" prefWidth="175.0" text="Employee Name" />
-            <TableColumn fx:id="sdate" prefWidth="175.0" text="Date Of Shipment" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="cusName" prefWidth="175.0" text="Customer Name" />
+            <TableColumn fx:id="empName" prefWidth="175.0" text="Employee Name" />
+            <TableColumn fx:id="date" prefWidth="175.0" text="Date Of Shipment" />
         </columns>
       </TableView>
       <Button alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#back" text="Back" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
